@@ -19,4 +19,7 @@ class Menu(models.Model):
     inventory = models.IntegerField()  
     
     def __str__(self) -> str:
-        return super().__str__()
+        return super().__str__() # Here, the __str__ method is defined to call the __str__ method of the superclass using super().__str__(). By doing this, it will return the string representation of the object as defined in the superclass. This is useful when you want to extend the functionality of the superclass's __str__ method in a subclass, and you still want to retain some of the original behavior.
+    # or 
+    # def __str__(self):
+    #   return f'{self.title} : {str(self.price)}' , Here,  the __str__ method is defined to create a custom string representation for the object. It uses an f-string to format the output, where self.title and self.price are attributes of the object. The method returns a string containing the title and price in a specific format. For example, if self.title is "Product A" and self.price is 19.99, the __str__ method would return the string: "Product A : 19.99".
