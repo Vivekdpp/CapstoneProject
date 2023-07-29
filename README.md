@@ -2,9 +2,9 @@
 
 API Endpoints:
 
-restaurant/menu/
-restaurant/menu/1 [for Single-menu-item]
-restaurant/booking/tables/
+(1) restaurant/menu/   
+(2) restaurant/menu/1 [for Single-menu-item]
+(3) restaurant/booking/tables/
 
 --> If you want to add new item with specific ID: you can do this by this link in Insomnia: restaurant/menu/ and pass the JSON Body: 
                                                                                                                         {
